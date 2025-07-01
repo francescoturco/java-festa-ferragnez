@@ -13,8 +13,19 @@ import java.util.Scanner;
 public class CheckGuest {
     public static void main(String[] args) throws Exception {
         
-        Scanner scan = new Scanner(System.in);
-
         String[] listaInvitati = {"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax","Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis","Pardis Zarei", "Martina Maccherone", "Rachel Zeilic"};
+
+
+        Scanner scan = new Scanner(System.in);
+        
+        
+        //chiedo all'utente come si chiama
+        System.out.print("Inserisci il tuo Nome e Cognome");
+        String nomeUtente = scan.nextLine();
+
+     
+
+
+
     }
 }
