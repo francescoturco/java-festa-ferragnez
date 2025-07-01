@@ -20,12 +20,24 @@ public class CheckGuest {
         
         
         //chiedo all'utente come si chiama
-        System.out.print("Inserisci il tuo Nome e Cognome");
+        System.out.print("Inserisci il tuo Nome e Cognome ");
         String nomeUtente = scan.nextLine();
 
-     
 
-
-
+        //verifico se il nome è nella lista utilizzando un ciclo for e un valore booleano per stampare alla fine il messaggio se è in lista o no
+        //equals() serve per conforntare il contenuto tra due stringhe
+        Boolean inLista = false;
+         for (int i = 0; i < listaInvitati.length; i++) {
+            if (listaInvitati[i].equals(nomeUtente)) {
+                inLista = true;
+                break;
+            }
+        }
+        //stampo messaggio finale 
+        if (inLista) {
+        System.out.println(nomeUtente + " è presente nella lista, entri pure!");
+        } else {
+        System.out.println(nomeUtente + " ci dispiace ma il suo nome non è nella lista, non può entrare!");
+        }
     }
-}
+}    
